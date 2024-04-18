@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Information Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Formulario SantiClinic</h1>
+  <form id="employeeForm" action="" name="formulario-santiclinic">
+    <div>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="phone">Telefone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="dob">Data de Aniversário:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    <div>
+      <label for="city">Cidade:</label>
+      <input type="text" id="city" name="city" required>
+    </div>
+    <div>
+      <label for="sex">Género:</label>
+      <select id="sex" name="sex" required>
+        <option value="masculini">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="other">Outro</option>
+      </select>
+    </div>
+    <div>
+      <label for="startDate">Data de início na Empresa:</label>
+      <input type="date" id="startDate" name="startDate" required>
+    </div>
+    <div>
+      <label for="salary">Salario:</label>
+      <input type="number" id="salary" name="salary" required>
+    </div>
+    <div>
+      <label for="employmentType">Emprego:</label>
+      <select id="employmentType" name="employmentType" required>
+        <option value="full-time">Full Time</option>
+        <option value="part-time">Part Time</option>
+      </select>
+    </div>
+    <div>
+      <label for="profession">Profissao:</label>
+      <input type="text" id="profession" name="profession" required>
+    </div>
+    <div>
+      <label for="workSchedule">Horário de Trabalho(ex:08:00 as 17:00):</label>
+      <input type="text" id="workSchedule" name="workSchedule" required>
+    </div>
+    <div>
+        <label for="workDays">Dias de trabalho/por semana(ex:Segunda à Sexta):</label>
+        <input type="text" id="workDays" name="workDays" required>
+      </div>
+    <div>
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" name="skills" required>
+    </div>
+    <div>
+      <label for="futurePlans">A nivel professional como te imaginas daqui a 5 anos?</label>
+      <textarea id="futurePlans" name="futurePlans" rows="4" required></textarea>
+    </div>
+    <div>
+      <label for="otherJob">Tens outro trabalho para além da clínica?</label>
+      <select id="otherJob" name="otherJob" required>
+        <option value="yes">Sim</option>
+        <option value="no">Nao</option>
+      </select>
+    </div>
+    <div>
+        <label for="futureEducation">Que curso/formação gostarias de fazer no futuro?</label>
+        <input type="text" id="futureEducation" name="futureEducation" required>
+      </div>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <p>Dados enviados com sucesso,Obrigado</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
